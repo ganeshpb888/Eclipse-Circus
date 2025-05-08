@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+font-size: 50px;
+line-height: 64px;
+color:#222;
+}
+
+h2{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+
+h4{
+    font-size: 20px;
+color:#222;
+}
+
+h6{
+font-weight: 700;
+font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 15px 20px 0px;
+}
+.section-p1{
+    padding:40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #150202;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color:transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+
+
+
+body{
+    width: 100%;
+}
+
+
+
+/*header start */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+.logo{
+    position: absolute;
+    top:10px;  /* Adjust to your preference */
+    left: 10px; /* Adjust to your preference */
+    width: 50px; /* Adjust size if needed */
+    height: 50px; /* Keeps the aspect ratio */
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    margin: 0 15px;
+    position: relative;
+  
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #150202;
+    transition: 0.03s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #007bff; /* Optional: Add hover effect */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30px;
+    height: 2px;
+    background:#088178;
+    position:absolute;
+    bottom: -4px;
+left: 20px;
+}
+
+#hero{
+ background-image: url(image/molly-mears-4_90zmmdo_4-unsplash.jpg );
+ height: 90vh;
+ width: 100%;
+ background-size: contain;
+  background-position:top 25% right 0;
+background-repeat: no-repeat;
+ padding: 0 80px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+color:#088178;
+}
+
+#hero button{
+   background-image:url(image/button.png);
+   background-color: transparent;
+   color: #088178;
+   border: 0;
+   padding: 14px 80px 14px 65px ;
+   background-repeat: no-repeat;
+   cursor:pointer;
+   font-weight: 700;
+   font-size: 15px; 
+}
+
+.feature{
+    width: 12%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px;
+}
+.feature:hover{
+    box-shadow: 2px 2px 10px black;
+
+}
+
+.fe-img img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+
+}
+
+.title{
+    text-align: center;
+    padding: 5px;
+
+}
+.des{
+    text-align: center;
+    padding: 6px;
+
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   background-color: white;
+   border: 1px solid rgb(0, 0, 0);
+   padding:5px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+
+#product1{
+    text-align: center;
+}
+.pro-container{
+    background-image: url(image/max-harlynking-nyBNwQbExW8-unsplash.jpg);
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px;
+}
+.pro-container:hover{
+    box-shadow: 2px 2px 10px rgb(33, 161, 224);
+}
+.pro img{
+    width: 100%;
+    border-top-right-radius: 5x;
+    border-top-left-radius: 5px;
+}
+.des{
+    text-align: center;
+    padding: 6px;
+}
+.star{
+    color: yellow;
+}
+.btn{
+    background-image:url(image/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding:20px 20px 20px 40px ;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight:50PX;
+    font-size: 15px; 
+}
+.btn:hover{
+    color: rgb(109, 49, 9);
+    transition: .3s;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   background-color: white;
+   border: 1px solid rgb(205, 234, 19);
+   padding:5px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+button:hover{
+    background-color: rgb(139, 189, 234);
+    color: rgb(228, 244, 54);
+    transition: .5s;
+}
+/*repairservices*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    background-image: url(image/bannerbg.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+
+}
+#banner h4{
+    color:#dde9e3;
+  position: absolute;
+  padding-bottom: 20%;
+  font-size: 30px;
+ 
+}
+#banner h2 Span{
+    color:#e70e0e;
+
+}
+#banner h2{
+    color: #dde9e3;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+    transition: .3s;
+}
+/*New launching*/
+#product{
+    text-align: center;
+}
+.pro-container{
+    background-image: none;
+    width: 20%;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 30px;
+}
+.pro-container:hover{
+    box-shadow: 2px 2px 10px rgb(33, 161, 224);
+}
+.pro img{
+    width: 100%;
+    border-top-right-radius: 5x;
+    border-top-left-radius: 5px;
+}
+.des{
+    text-align: center;
+    padding: 6px;
+}
+.star{
+    color: yellow;
+}
+.btn{
+    background-image:url(image/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding:20px 20px 20px 40px ;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight:50PX;
+    font-size: 15px; 
+}
+.btn:hover{
+    color: rgb(109, 49, 9);
+    transition: .3s;
+}
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   background-color: white;
+   border: 1px solid rgb(205, 234, 19);
+   padding:5px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+button:hover{
+    background-color: rgb(139, 189, 234);
+    color: rgb(228, 244, 54);
+    transition: .5s;
+}
+/*ss-banner*/
+#ss-banner{
+    display: flex;
+    justify-content:space-between;
+  flex-wrap: wrap;
+  
+}
+#ss-banner .banner-box{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    background-image:url(image/short-girl-dressing-tips.webp);
+    min-width:570px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+.banner-box2{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url(image/brooke-cagle-z1B9f48F5dc-unsplash\ -\ Copy\ \(2\).jpg);
+    min-width:570px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#ss-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+#ss-banner h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+}
+#ss-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+/*modelbanner*/
+#modelbanner{
+   display:flex;
+   justify-content:space-between;
+   flex-wrap:nowrap;
+   
+}
+
+#modelbanner .banner-bb{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    background-image:url(image/cesar-la-rosa-HbAddptme1Q-unsplash.jpg);
+    min-width:50px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-right: 20px;
+}
+.banner-bb2{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    background-image:url(image/felipe-galvan-AhfrA5VQNpM-unsplash.jpg);
+    min-width:100px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-left: 20px;
+}
+.banner-bb3{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    text-align: center;
+    background-image:url(image/manny-moreno-2HTX85gxynM-unsplash.jpg);
+    min-width:100px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin-left: 30px;
+}
+
+#modelbanner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+}
+#modelbanner h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #E3E6F3;
+    padding: 50px 80px;
+    margin-top: 50px; 
+
+}
+
+/* Flex container for structured layout */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left side - Logo & Contact */
+footer {
+    background-color: #E3E6F3;
+    padding: 50px 80px;
+}
+
+/* Main container with flex layout */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Corner Logo */
+.footer-logo-container {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 120px; 
+}
+
+/* Columns container */
+.footer-cols {
+    display: flex;
+    flex: 3;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Each column */
+.col {
+    flex: 1;
+    text-align: left;
+    min-width: 200px;
+    padding: 10px;
+}
+
+.col h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.col a, .col p {
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.col a:hover {
+    color: #088178;
+}
+
+/* Install App Section */
+.install .row img {
+    width: 120px;
+    margin: 10px 5px;
+    border-radius: 6px;
+}
+
+/* Social Media Icons - Centered */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #088178;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    color: #465b52;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #088178;
+}
+
+/* Responsive Design */
+@media (max-width: 799px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cols {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 477px) {
+    footer {
+        padding: 30px 20px;
+    }
+
+    .footer-logo {
+        width: 90px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
